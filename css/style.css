@@ -1,0 +1,336 @@
+@charset "utf-8";
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none ;
+}
+body{
+    width: 1477.3px;
+    margin: 0 auto;
+}
+#header{
+    width: 1477.3px;
+    height: 60px;
+    background: RGB(52,147,199);
+}
+#nav li{
+    width: 200px;
+    float: left;
+    margin-top: 5px;
+    margin-right: 30px;
+    margin-left: 96px;
+}
+#nav a {
+    font-size: 21px;
+    font-family: '微软雅黑';
+    color: white;
+    line-height: 50px;
+    display: block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    background-size: 500%;
+    border-radius: 50px;
+    z-index: 1;
+}
+#nav a::before{
+    content: "";
+    position:absolute;
+    top:-5px;
+    left:-5px;
+    bottom:-5px;
+    right:-5px;
+    background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
+    background-size: 500%;
+    border-radius: 50px;
+    z-index: -1;
+    filter: blur(20px);
+}
+#nav a:hover{
+    animation: streamer 8s infinite;
+}
+#nav a:hover::before{
+    animation: streamer 8s infinite;
+}
+@keyframes streamer{
+    100%{
+        background-position: -400% 0;
+    }
+}
+#container{
+    width: 1477.3px;
+    height: 3270px;
+}
+#footer{
+    width: 1477.3px;
+    height: 100px;
+    background: RGB(31,97,92);
+}
+.title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: 10px;
+    bottom: 0;
+    color: #000080;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: '微软雅黑';
+}
+.subtitle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 128px;
+    margin: 40px;
+    bottom: 0;
+    color: #191970;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: '幼圆';
+}
+#Home{
+    width: 1477.3px;
+	height: 823.33px;
+	background: gray url(../images/3.jpg);
+}
+.squ{
+	display:block;
+	position:absolute;
+	width:750px;
+	height:300px;
+	top:395px;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background-color:rgba(255, 255, 255, 0.6);
+	border-radius:25px;
+}
+.sqv{
+	display: block;
+	position: absolute;
+	width: 363.65px;
+	height: 200px;
+	top: 395px;
+	left: 363px;
+	margin: 0;
+	transform:translate(-100%,-50%);
+	background-image: linear-gradient(to right, rgba(255,255,255,0.16) ,rgba(255,255,255,0.6));
+}
+.sqw{
+	display: block;
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	top: 395px;
+	left: 1113px;
+	margin: 0;
+	transform:translate(0%,-50%);
+	background-image: linear-gradient(to left, rgba(255,255,255,0.16) ,rgba(255,255,255,0.6));
+}
+#About{
+    width: 1477.3px;
+	height: 823.33px;
+	background: gray url(../images/2.jpg);
+}
+#movies{
+    width: 1477.3px;
+	height: 823.33px;
+	background: gray url(../images/12.jpg);
+}
+.a{
+    position: absolute;
+    display: flex;
+    left: 25px;
+    padding: 50px;
+    color: #000000 ;
+    font-size: 30px;
+    font-family: '微软雅黑';   
+}
+#Work{
+    width: 1477.3px;
+	height: 823.33px;
+	background: gray url(../images/1.jpg);
+}
+
+#Contact{
+    width: 1477.3px;
+	height: 800px;
+	background: RGB(31,97,92) url(../images/11.jpg);
+}
+.b{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    line-height: 50px;
+    margin: 0;
+    left: 35%;
+    top: 1130px;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: '等线';
+    text-align:center
+    
+}
+.c{
+    position: absolute;
+    display: flex;
+    left: 25px;
+    padding: 50px;
+    color: #000000 ;
+    font-size: 30px;
+    font-family: '微软雅黑';
+}
+.foot {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+    left: 340px;
+    padding: 100px;
+    position: relative; 
+  }
+  .foot img {
+    width: 600px;
+    height: 600px;
+    display: none; 
+  }
+  .footimg .active {
+    display: block; 
+  }
+  .footli {
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+  }
+  .footli li {
+    float: left;
+    margin: 0 10px; 
+    width: 30px;
+    height: 30px;
+    background: rgb(240, 199, 20);
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  .footli .active {
+    background-color: seagreen;
+    color: seashell;}
+.e{
+    position: absolute;
+    display: flex;
+    left: 25px;
+    padding: 50px;
+    color: #000000 ;
+    font-size: 30px;
+    font-family: '微软雅黑';
+}
+.con{
+    padding: 170px;
+}
+.g{
+    position: absolute;
+    display: flex;
+    left: 25px;
+    padding: 50px;
+    color: #000000 ;
+    font-size: 30px;
+    font-family: '微软雅黑';
+}
+.i{
+    position: absolute;
+    display: flex;
+    top:2300px;
+    left: 285px;
+    padding: 50px;
+    color: #0c0341 ;
+    font-size: 25px;
+    font-family: '微软雅黑';
+}
+.j{
+    position: absolute;
+    display: flex;
+    top:2380px;
+    left: 395px;
+    padding: 50px;
+    color: #0c0341 ;
+    font-size: 25px;
+    font-family: '微软雅黑';
+}
+.Contain {
+    top:150px;
+    margin: 0px auto;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+    }
+    #carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+    }
+    #carousel:hover {
+    animation-play-state: paused;
+    }
+    #carousel figure {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 10px;
+    top: 10px;
+    background: black;
+    overflow: hidden;
+    border: solid 5px black;
+    }
+    .Contain img {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    height: 100%;
+    }
+    .Contain img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2, 1.2);
+    }
+    #carousel figure:nth-child(1) {
+        transform: rotateY(0deg) translateZ(288px);
+        }
+        #carousel figure:nth-child(2) {
+        transform: rotateY(60deg) translateZ(288px);
+        }
+        #carousel figure:nth-child(3) {
+        transform: rotateY(120deg) translateZ(288px);
+        }
+        #carousel figure:nth-child(4) {
+        transform: rotateY(180deg) translateZ(288px);
+        }
+        #carousel figure:nth-child(5) {
+        transform: rotateY(240deg) translateZ(288px);
+        }
+        #carousel figure:nth-child(6) {
+        transform: rotateY(300deg) translateZ(288px);
+        }
+    @keyframes rotation {
+    from {
+    transform: rotateY(0deg);
+    }
+    to {
+    transform: rotateY(360deg);
+    }
+    }
